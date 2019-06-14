@@ -17,12 +17,10 @@ body{
 }
 
 
+
+
 nav{
-  background-color:#aaa;
-  width: 70%;
   margin: 15rem auto;
-  margin-bottom: 0;
-  border-radius: 4px;
 }
 
 
@@ -32,10 +30,36 @@ nav ul {
   justify-content: center;
 }
 
+nav ul li {
+  background-image: linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
+  padding: .3rem 4.3rem;
+  border-right: 1px solid #555;
+  border-top:  1px solid #555;
+  border-bottom: 1px solid #555;
+}
+
+nav ul li:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-left: 1px solid #555;
+  background-image:  url(/images/nav.svg), linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
+  background-position-x: center;
+}
+
+nav ul li:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-image:  url(/images/search-one.png), linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
 nav ul a {
   color: #eee;
   text-decoration: none;
-  margin-right: 4rem;
+  font-size: 1.2rem;
+
 }
 
 header {
