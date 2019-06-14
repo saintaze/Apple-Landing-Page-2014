@@ -39,11 +39,49 @@ nav ul a {
 }
 
 header {
-  height: 83vh;
+  height: 53.8rem;
   background: url(/images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
+}
+
+header h1{
+  background: url(/images/h1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+}
+
+header h2{
+  background: url(/images/h2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+  margin-bottom: 1.2rem;
+}
+
+header h1{
+  background: url(/images/h1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+  margin-bottom: 1.4rem;
+}
+
+header h3{
+  background: url(/images/cta-simple.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+}
+
+header h3:hover{
+  background: url(/images/cta-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+  cursor: pointer;
 }
 
 aside {
