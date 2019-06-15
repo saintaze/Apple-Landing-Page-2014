@@ -20,7 +20,10 @@ body{
 
 
 nav{
-  margin: 15rem auto;
+position: absolute;
+top: 8rem;
+left: 50%;
+transform: translateX(-50%);
 }
 
 
@@ -31,43 +34,79 @@ nav ul {
 }
 
 nav ul li {
-  background-image: linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
-  padding: .3rem 4.3rem;
+  background-image: linear-gradient(to top, rgb(122,122,122) 2% ,rgb(106,106,106) 45%, rgb(132, 127, 127) 56%, rgb(130, 130, 130) 98%);
+  padding: .5rem 3.6rem;
   border-right: 1px solid #555;
   border-top:  1px solid #555;
   border-bottom: 1px solid #555;
 }
 
 nav ul li:first-child {
-  border-top-left-radius: 3px;
+  border-top-left-radius: 4px;
   border-bottom-left-radius: 3px;
   border-left: 1px solid #555;
-  background-image:  url(/images/nav.svg), linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
+  background-image: url(/images/nav.svg), linear-gradient(to top, rgb(122,122,122) 2% ,rgb(106,106,106) 45%, rgb(132, 127, 127) 56%);
   background-position-x: center;
+  padding: .5rem 4.8rem;
+  background-repeat: no-repeat;
+
 }
+
 
 nav ul li:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-image:  url(/images/search-one.png), linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
+  background-image: url(/images/search-one.png), linear-gradient(to top,  rgb(106,106,106) 0% 45%, rgb(132, 127, 127) 56%);
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 8rem;
+  background-size: 13rem 2.3rem, auto;
+}
 
+nav ul li:not(:last-child):hover{
+  background-image: linear-gradient(to top, rgb(122,122,122) 1% ,rgb(62,62,62)
+  48%, rgb(77,77,77)52%);
+  cursor: pointer;
+}
+
+nav ul li:first-child:hover{
+  background-image: url(/images/nav.svg), linear-gradient(to top, rgb(122,122,122) 1% ,rgb(62,62,62)
+  48%, rgb(77,77,77)52%);
+}
+
+nav ul li a:hover{
+  text-decoration: none;
+}
+
+/* nav ul li:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-image: linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
+ 
+} */
+
+nav ul li:last-child a img{ 
+  width: 50px;
 }
 
 nav ul a {
   color: #eee;
   text-decoration: none;
   font-size: 1.2rem;
-
+  text-shadow: 1px 1px 1px #444, -1px -1px 1px #444
 }
 
 header {
   height: 53.8rem;
   background: url(/images/hero-img.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -35rem;
   background-size: cover; 
+  padding-top: 17rem;
+}
+
+header:hover{
+  cursor: pointer;
 }
 
 header h1{
@@ -75,6 +114,8 @@ header h1{
   background-repeat: no-repeat;
   background-position: center;
   height: 7rem;
+  background-size: auto 10rem;
+  margin-bottom: 1rem;
 }
 
 header h2{
@@ -83,14 +124,6 @@ header h2{
   background-position: center;
   height: 7rem;
   margin-bottom: 1.2rem;
-}
-
-header h1{
-  background: url(/images/h1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 7rem;
-  margin-bottom: 1.4rem;
 }
 
 header h3{
@@ -112,6 +145,9 @@ aside {
   display: flex;
   height: 20.6rem;
   border-top: 2px solid white;
+}
+aside div:hover {
+  cursor: pointer;
 }
 
 .product{
@@ -196,4 +232,82 @@ footer a {
 
 a:hover{
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1350px) {
+  footer, .links-column-2 ul {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .links-column-1{
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .links-column-2 {
+    margin-top: 2rem;
+  }
+
+  .links-column-2 ul li a {
+    border: none !important;
+  }
+
+  .links-column-2 ul li{
+    padding: .3rem 0;
+  }
+
+
+}
+
+
+@media screen and (max-width: 800px){
+  nav {
+    position: static;
+    width: 100%;
+    text-align: center;
+    transform: translateX(0);
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li{
+    background-image: none;
+    background-color: #908e8e;
+    border: none;
+    border-bottom: 1px solid #777;
+    padding: 1rem 0;
+  }
+
+  nav ul li:hover{
+    background-image: none !important;
+    background-color: #777 !important;
+  }
+
+  nav ul li:first-child{
+    display: none;
+  }
+  html {
+    font-size: 9px;
+  }
+  h1 {
+    background: url(/images/h1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+  background-size: auto 5rem;
+  margin-bottom: 1rem;
+  }
+
+  header {
+    height: auto;
+    background-position: center;
+  }
+
+  h1, h2, h3{
+    display: none;
+  }
+
 }
