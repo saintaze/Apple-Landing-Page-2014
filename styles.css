@@ -17,8 +17,6 @@ body{
 }
 
 
-
-
 nav{
 position: absolute;
 top: 8rem;
@@ -56,12 +54,57 @@ nav ul li:first-child {
 nav ul li:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-image: url(/images/search-one.png), linear-gradient(to top,  rgb(106,106,106) 0% 45%, rgb(132, 127, 127) 56%);
-  background-position: center;
+  background-image: linear-gradient(to top,  rgb(106,106,106) 0% 45%, rgb(132, 127, 127) 56%);
+  background-position: 20% ,center;
   background-repeat: no-repeat;
-  padding: 0 8rem;
-  background-size: 13rem 2.3rem, auto;
+  padding: .4rem 1.6rem;
+  position: relative;
 }
+
+nav ul li:last-child input {
+ height: 2rem;
+ width: 11rem;
+ border-radius: 500px;
+ border: 2px inset #888;
+ border-bottom: 1px  inset #999;
+ border-left: 1px  inset #999;
+ border-right: 1px  inset #999;
+ padding: .3rem 1rem;
+ padding-left: 2.5rem;
+ color: white;
+ background-image: linear-gradient(to top,  rgb(106,106,106) 0% 45%, rgb(132, 127, 127) 56%);
+ transition: all .4s;
+}
+
+nav ul li:last-child span {
+  background-image: url(/images/magnify.svg);
+  width: 2rem;
+  display: inline-block;
+  height: 2rem;
+  background-color: transparent;
+  position: absolute; 
+  top: 34%;
+  left: 15.5%;
+  transition: left .4s;
+ }
+
+
+nav ul li:last-child input:focus {
+  border: 2px inset #999;
+  border-bottom: 1px  inset #aaa;
+  border-left: 1px  inset #aaa;
+  border-right: 1px  inset #aaa;
+  background-image: none;
+  outline: none;
+  width: 17rem;
+  color: #555;
+  background-color: white;
+ }
+
+ nav ul li:last-child input:focus + span {
+  background-image: url(/images/magnify-dark.svg);
+  left: 11%;
+ }
 
 nav ul li:not(:last-child):hover{
   background-image: linear-gradient(to top, rgb(122,122,122) 1% ,rgb(62,62,62)
@@ -77,13 +120,6 @@ nav ul li:first-child:hover{
 nav ul li a:hover{
   text-decoration: none;
 }
-
-/* nav ul li:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  background-image: linear-gradient(to top, rgb(106,106,106) 35%,  rgb(139,139,139) 65%);
- 
-} */
 
 nav ul li:last-child a img{ 
   width: 50px;
