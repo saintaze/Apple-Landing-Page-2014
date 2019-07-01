@@ -221,8 +221,8 @@ aside > div {
 }
 
 footer {
-  display: flex;
-  padding: 2.5rem 10rem;
+  /* display: flex; */
+  /* padding: 2.5rem 10rem; */
 }
 
 footer > div {
@@ -235,7 +235,7 @@ footer > div {
 }
 
 .links-column-2{
-
+  margin-left: 3rem;
 }
 
 
@@ -289,7 +289,7 @@ a:hover{
   }
 
   .links-column-2 {
-    margin-top: 2rem;
+    margin-top: 2.9rem;
   }
 
   .links-column-2 ul li a {
@@ -301,6 +301,11 @@ a:hover{
   }
 
 
+}
+
+.links-wrapper {
+  display: flex;
+  padding: 2.5rem 12rem;
 }
 
 
@@ -345,7 +350,7 @@ a:hover{
 
   header {
     height: auto;
-    background-position: center;
+    background-position: center;b
   }
 
   h1, h2, h3{
