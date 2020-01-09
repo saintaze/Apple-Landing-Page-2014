@@ -1,4 +1,4 @@
-# Apple Landing Page 2014 Clone
+# Apple Landing Page (2014)
 
 It's a clone of an apple landing page from year 2014. 
 
@@ -6,12 +6,9 @@ It's a clone of an apple landing page from year 2014.
 + HTML5
 + CSS3
 
-# Cloned Page URL
+# Live Version
 
-URL:  [Apple (2014)](https://web.archive.org/web/20140401014630/http://www.apple.com/)
+URL: [Apple (2014)](https://saintaze.github.io/Apple-Landing-Page-2014/)
 
-# Authors
+# Author
 + Saintaze [https://github.com/saintaze/](https://github.com/saintaze/)
-
-# Github Page
-Live Version: 
