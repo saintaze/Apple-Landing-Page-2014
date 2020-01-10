@@ -11,4 +11,4 @@ It's a clone of an apple landing page from year 2014.
 URL: [Apple (2014)](https://saintaze.github.io/Apple-Landing-Page-2014/)
 
 # Author
-+ Saintaze [https://github.com/saintaze/](https://github.com/saintaze/)
+Saintaze [@saintaze](https://github.com/saintaze/)
